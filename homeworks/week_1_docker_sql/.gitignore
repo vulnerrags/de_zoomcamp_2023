@@ -2,17 +2,3 @@
 *.csv
 .idea/
 *.xml
-.DS_Store
-.idea
-*.tfstate
-*.tfstate.*
-**.terraform
-**.terraform.lock.*
-**google_credentials.json
-**logs/
-**.env
-**__pycache__/
-.history
-**/ny_taxi_postgres_data/*
-serving_dir
-!week_6_stream_processing/avro_example/data/rides.csv
