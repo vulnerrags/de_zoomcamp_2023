@@ -7,7 +7,7 @@ variable "project" {
   default = "zoomcamp-de-2023"
 }
 
-variable "region" {
+variable"region" {
   description = "Region for GCP resources. Choose as per your location: https://cloud.google.com/about/locations"
   default = "europe-west6"
   type = string
