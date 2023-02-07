@@ -1,0 +1,39 @@
+###
+### A complete description of a Prefect Deployment for flow 'ETL Web to GCP'
+###
+name: Q2 Homework Flow
+description: The main ETL function
+version: 22578871f17b97e2fdf9b628d0f3d5b0
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {}
+schedule:
+  cron: 0 5 1 * *
+  timezone: America/Chicago
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: ETL Web to GCP
+manifest_path: null
+storage: null
+path: /Users/feelingalive/git_repo/de_zoomcamp_2023/homeworks/week_2/week_2_prefect/homework
+entrypoint: etl_web_to_gcs.py:etl_web_to_gcs
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null

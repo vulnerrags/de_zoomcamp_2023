@@ -1,0 +1,54 @@
+###
+### A complete description of a Prefect Deployment for flow 'MainFlow ETL parent flow'
+###
+name: Parameterized ETL
+description: null
+version: 21ab2547ef0a5071cf97bc21df407d75
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {"months": [1, 2, 3], "year":2021, "color": "yellow"}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: MainFlow ETL parent flow
+manifest_path: null
+storage: null
+path: /Users/feelingalive/git_repo/de_zoomcamp_2023/homeworks/week_2/week_2_prefect
+entrypoint: parameterized_flow.py:etl_parent_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    months:
+      title: months
+      position: 0
+      type: array
+      items:
+        type: integer
+    year:
+      title: year
+      default: 2021
+      position: 1
+      type: integer
+    color:
+      title: color
+      default: yellow
+      position: 2
+      type: string
+  required:
+  - months
+  definitions: null
