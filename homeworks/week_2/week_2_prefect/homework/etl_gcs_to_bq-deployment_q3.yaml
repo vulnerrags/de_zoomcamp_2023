@@ -28,7 +28,7 @@ flow_name: MainFlow_GCS_to_BQ
 manifest_path: null
 storage: null
 path: /Users/feelingalive/git_repo/de_zoomcamp_2023/homeworks/week_2/week_2_prefect/homework
-entrypoint: etl_gcs_to_bq.py:etl_gcs_to_bq
+entrypoint: etl_gcs_to_bq_q3.py:etl_gcs_to_bq
 parameter_openapi_schema:
   title: Parameters
   type: object

@@ -30,7 +30,7 @@ flow_name: ETL Web to GCP
 manifest_path: null
 storage: null
 path: /Users/feelingalive/git_repo/de_zoomcamp_2023/homeworks/week_2/week_2_prefect/homework
-entrypoint: etl_web_to_gcs.py:etl_web_to_gcs
+entrypoint: etl_web_to_gcs_q2.py:etl_web_to_gcs
 parameter_openapi_schema:
   title: Parameters
   type: object
