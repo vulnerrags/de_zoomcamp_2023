@@ -8,7 +8,7 @@ deployment = Deployment.build_from_flow(
      flow=etl_web_to_gcs,
      name="github-example",
      storage=storage,
-     entrypoint="homeworks/week_2/week_2_prefect/homework/etl_web_to_gcs.py:etl_web_to_gcs",
+     entrypoint="homeworks/week_2/week_2_prefect/homework/etl_web_to_gcs_q4.py:check_size",
      parameters={"color": "green", "year": 2020, "month": 11}
 )
 
